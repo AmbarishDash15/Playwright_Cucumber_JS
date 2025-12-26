@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "regression" : "npx playwright test",
-    "api" : "npx playwright test --grep @APInUI",
-    "fileop" : "npx playwright test --grep @FileOpnUI",
-    "smoke" : "npx playwright test --grep @SmokeUI",
-    "web" : "npx playwright test --grep @UI",
-    "browsercompatibility" : "npx playwright test tests/UI_EndToEnd_Client.spec.js --config=playwright_multibrowser.config.js"
+    "regression": "npx playwright test",
+    "api": "npx playwright test --grep @APInUI",
+    "fileop": "npx playwright test --grep @FileOpnUI",
+    "smoke": "npx playwright test --grep @SmokeUI",
+    "web": "npx playwright test --grep @UI",
+    "browsercompatibility": "npx playwright test tests/UI_EndToEnd_Client.spec.js --config=playwright_multibrowser.config.js"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +20,7 @@
     "allure-playwright": "^3.4.3"
   },
   "dependencies": {
+    "@cucumber/cucumber": "^12.4.0",
     "exceljs": "^4.4.0"
   }
 }
