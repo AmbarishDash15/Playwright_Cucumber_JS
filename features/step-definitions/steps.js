@@ -3,9 +3,7 @@ const {PageObjectManager} = require('../../pageObjects/PageObjectManager');
 const {firefox} = require('playwright');
 
 Given('I open the application at URL {string}', {timeout : 30*1000}, async function (appUrl) {
-    const browser = await firefox.launch(
-        {headless: false}
-    );
+    const browser = await firefox.launch();
     const context = await browser.newContext();
     const page = await context.newPage();
     this.pageObjectManager = new PageObjectManager(page);//Initiate Page Object Manager
